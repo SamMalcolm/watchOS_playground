@@ -6,12 +6,28 @@
 //
 
 import SwiftUI
+import CoreMotion
+
+var counter:Int = 0
 
 struct ContentView: View {
+    
+    
+    
     var body: some View {
-        Text("Hello, World!")
-            .padding()
+        VStack {
+            Text("Hello, Sam!")
+                .padding(.all, 10.0)
+            Button(action: {
+                counter += 1
+                    print("pressed")
+                
+            }) {
+                Text("My Button \(counter)")
+            }
+        }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
