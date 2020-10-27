@@ -10,24 +10,23 @@ import CoreMotion
 
 var counter:Int = 0
 
+var motionManager = CMMotionManager()
+
 struct ContentView: View {
     
-    
-    
+
     var body: some View {
         VStack {
+
             Text("Hello, Sam!")
-                .padding(.all, 10.0)
-            Button(action: {
-                counter += 1
-                    print("pressed")
+            Image("lightning")
+            Text("Hello, PIZZA!!")
+            Spacer()
                 
-            }) {
-                Text("My Button \(counter)")
-            }
-        }
+        
     }
     
+}
 }
 
 struct ContentView_Previews: PreviewProvider {
